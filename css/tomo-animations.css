@@ -1,0 +1,240 @@
+.cloud_travel {
+    transform: translatey(0px);
+    animation: cloud_travel 5s ease-in-out infinite;
+    animation-direction: reverse;
+  }
+  @keyframes cloud_travel {
+    0% {
+      transform: translate(0px, -3px);
+    }
+    50% {
+      transform: translate(0px, 0px);
+    }
+    100% {
+      transform: translate(0px, -3px);
+    }
+  }
+  
+  .boat_travel {
+    transform: translatey(0px);
+    animation: boat_travel 4s ease-in-out infinite;
+    animation-direction: reverse;
+  }
+  @keyframes boat_travel {
+    0% {
+      transform: translate(2px, -4px) rotate(-1deg);
+    }
+    50% {
+      transform: translate(0px, 0px) rotate(0deg);
+    }
+    100% {
+      transform: translate(2px, -4px) rotate(-1deg);
+    }
+  }
+  
+  
+
+    
+  .axolune_move {
+    transform: translatex(0px);
+  animation: axolune_rotate 6s ease-in-out infinite;
+  animation-direction: reverse;
+}
+@keyframes axolune_rotate {
+  0% {
+    transform: translate(0px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+  100% {
+    transform: translate(0px, -1px) rotate(1deg);
+  }
+}
+
+
+
+  
+
+  .daiko_move {
+    transform: translatex(0px);
+  animation: daiko_rotate 6s ease-in-out infinite;
+  animation-direction: reverse;
+}
+@keyframes daiko_rotate {
+  0% {
+    transform: translate(0px, 1px) rotate(-1deg);
+  }
+  50% {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+  100% {
+    transform: translate(0px, 1px) rotate(-1deg);
+  }
+}
+
+
+  
+  .comet_travel {
+    transform: translatey(0px);
+    animation: comet_travel 1s ease-in-out infinite;
+    animation-direction: reverse;
+  }
+  @keyframes comet_travel {
+    0% {
+      transform: translate(0px, 0.3px) ;
+    }
+    50% {
+      transform: translate(0px, 0px) ;
+    }
+    100% {
+      transform: translate(0px, 0.3px);
+    }
+  }
+  
+  .seagull_fly {
+    transform: translatey(0px);
+    animation: seagull_fly 3s ease-in-out infinite;
+    animation-direction: reverse;
+  }
+  @keyframes seagull_fly {
+    0% {
+      transform: translate(0px, 3px) ;
+    }
+    50% {
+      transform: translate(1px, 0px) ;
+    }
+    100% {
+      transform: translate(0px, 3px);
+    }
+  }
+  
+  .dracelest_fly {
+    transform: translatey(0px);
+    animation: dracelest_fly 5s ease-in-out infinite;
+    animation-direction: reverse;
+  }
+  @keyframes dracelest_fly {
+    0% {
+      transform: translate(0px, 1px) ;
+    }
+    50% {
+      transform: translate(-2px, 0px) ;
+    }
+    100% {
+      transform: translate(0px, 1px);
+    }
+  }
+  
+  .choribat_fly {
+    transform: translatey(0px);
+    animation: choribat_fly 2s ease-in-out infinite;
+    animation-direction: reverse;
+  }
+  @keyframes choribat_fly {
+    0% {
+      transform: translate(0px, 1.5px) rotate(2deg);
+    }
+    50% {
+      transform: translate(0px, 0px) rotate(2deg);
+    }
+    100% {
+      transform: translate(0px,  1.5px) rotate(2deg);
+    }
+  }
+  
+  
+  .leaf_move {
+    transform: translatex(0px);
+    animation: leaf_move 1s ease-in-out infinite;
+    animation-direction: reverse;
+  }
+  @keyframes leaf_move {
+    0% {
+      transform: translate(1px, 0px) ;
+    }
+    50% {
+      transform: translate(0px, 0px) ;
+    }
+    100% {
+      transform: translate(1px, 0px);
+    }
+  }
+  
+  .zhareflare_fly {
+    transform: translatey(0px);
+    animation: zhareflare_fly 5s ease-in-out infinite;
+    animation-direction: reverse;
+  }
+  @keyframes zhareflare_fly {
+    0% {
+      transform: translate(0px, 2px) ;
+    }
+    50% {
+      transform: translate(5px, 0px) ;
+    }
+    100% {
+      transform: translate(0px, 2px);
+    }
+  }
+  
+  .emberdon_breath {
+      position: absolute;
+      animation: emberdon_animation 4s ease-in-out infinite;
+  }
+  
+  /* 🦘🔥 Combined Animation */
+  @keyframes emberdon_animation {
+      0%, 100% {
+          transform: translateY(0px) rotate(0deg);
+          filter: brightness(1);
+      }
+      25% {
+          transform: translateY(-1px) rotate(-0.3deg);
+      }
+      50% {
+          transform: translateY(0px) rotate(0deg);
+          filter: brightness(1.2);
+      }
+      75% {
+          transform: translateY(-1px) rotate(0.3deg);
+      }
+  }
+
+  
+  
+  .seranei_move {
+      position: absolute;
+      animation: seranei_rear 3.5s ease-in-out infinite;
+  }
+  
+  /* 🦄 Rearing Up Motion */
+  @keyframes seranei_rear {
+      0%, 100% {
+          transform: translateY(0px) translateX(0px) rotate(0deg);
+      }
+      30% {
+          transform: translateY(-1px) rotate(1deg);
+      }
+      50% {
+          transform: translateY(-0.5px) translateX(2px) rotate(1deg);
+      }
+      70% {
+          transform: translateY(-1px) rotate(1deg);
+      }
+  }
+  
+  .lilitad_fall {
+      position: absolute;
+      animation: lilitad_balance 4.2s ease-in-out infinite;
+  }
+  
+  /* ⚖️ Gentle, Slow Wobble */
+  @keyframes lilitad_balance {
+      0% { transform: rotate(0deg) translateY(0px); }
+      25% { transform: rotate(0.1deg) translateY(-0.15px); }
+      50% { transform: rotate(-0.15deg) translateY(0px); }
+      75% { transform: rotate(0.15deg) translateY(-0.15px); }
+      100% { transform: rotate(0deg) translateY(0px); }
+  }
+  
